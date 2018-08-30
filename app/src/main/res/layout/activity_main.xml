@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editComanda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="#ff6699"
+        android:hint="Valor da Comanda"
+        android:inputType="numberDecimal"
+        android:textSize="30dp" />
+
+
+    <EditText
+        android:id="@+id/editPessoas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="#ff9900"
+        android:hint="Quantidade de Pessoas"
+        android:inputType="number"
+        android:textSize="30dp" />
+
+
+    <Switch
+        android:id="@+id/switchGarcom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Pagar 10% para o garçom?"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/editRateio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="#99cc00"
+        android:onClick="calculaRateio"
+        android:text="CALCULAR"
+        android:textSize="20dp" />
+
+    <TextView
+        android:focusable="auto"
+        android:id="@+id/mostraResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="#003366"
+        android:text="RESULTADO"
+        android:textAlignment="center"
+        android:textColor="#ff0000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
